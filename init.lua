@@ -20,6 +20,10 @@ vim.opt.listchars = {
   space = '·',
 }
 
+-- 42 Header credentials
+vim.g.user = "fde-alme"
+vim.g.mail = "fde-alme@student.42porto.com"
+
 -- Install plugin manager (lazy.nvim)
 require("config.lazy")
 
