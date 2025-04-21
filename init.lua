@@ -6,6 +6,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Disable the spacebar key's default behavior in Normal and Visual modes
+vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+
 -- Basic settings
 vim.opt.number = true             -- Show line numbers
 vim.opt.relativenumber = true    -- Show relative line numbers (e.g., 1, 2, 3 above/below cursor) vim.opt.mouse = "a"              -- Enable mouse support
