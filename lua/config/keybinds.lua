@@ -38,7 +38,7 @@ keymap.set("n", "<leader>nd", "<CMD>NoiceDismiss<CR>", { desc = "Noice Dismiss A
 -- Buffers
 keymap.set("n", "<S-l>", "<CMD>bnext<CR>", { desc = "Next Buffer" })
 keymap.set('n', '<Tab>', '<CMD>bnext<CR>', { desc = "Next Buffer" })
-keymap.set("n", "<S-h>", "<CMD>bprevious<CR>", { desc = "Previos Buffer" })
+keymap.set("n", "<S-h>", "<CMD>bprevious<CR>", { desc = "Previous Buffer" })
 keymap.set('n', '<S-Tab>', '<CMD>bprevious<CR>', { desc = "Previous Buffer"})
 keymap.set('n', '<leader>x', '<CMD>bd<CR>', { desc = "Close Buffer" })
 keymap.set('n', '<leader>b', '<CMD>enew<CR>', { desc = "New Buffer" })
