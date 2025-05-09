@@ -9,7 +9,6 @@ g.mapleader = " "
 g.maplocalleader = "\\"
 
 -- In the first argument from set function, 'n' stands for Normal mode and 'v' to Visual mode
-
 -- Disable the spacebar key's default behavior in Normal and Visual modes
 keymap.set({ "n", "v" }, '<Space>', '<Nop>', { silent = true })
 
@@ -17,9 +16,29 @@ keymap.set({ "n", "v" }, '<Space>', '<Nop>', { silent = true })
 keymap.set("n", "<leader>cd", vim.cmd.Ex, { desc = "Open file explorer" })
 
 -- Open Lazy plugin manager 
-keymap.set("n", "<leader>l", ":Lazy<CR>", { desc = "Open Lazy.vim" })
+keymap.set("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy.vim" })
 
--- Noice keymaps
-keymap.set("n", "<leader>nh", ":NoiceHistory<CR>", { desc = "Noice History" })
-keymap.set("n", "<leader>nl", ":NoiceLast<CR>", { desc = "Noice Last Message" })
-keymap.set("n", "<leader>nd", ":NoiceDismiss<CR>", { desc = "Noice Dismiss All" })
+-- New file
+keymap.set("n", "<leader>nf", "<CMD>enew<cr>", { desc = "New File" })
+
+-- Clear search, diff update and redraw
+keymap.set("n", "<leader>ur",
+  "<CMD>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
+  { desc = "Redraw / Clear hlsearch / Diff Update" }
+)
+
+-- Save file
+keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<CMD>w<CR><ESC>", { desc = "Save File" })
+
+-- Noice
+keymap.set("n", "<leader>nh", "<CMD>NoiceHistory<CR>", { desc = "Noice History" })
+keymap.set("n", "<leader>nl", "<CMD>NoiceLast<CR>", { desc = "Noice Last Message" })
+keymap.set("n", "<leader>nd", "<CMD>NoiceDismiss<CR>", { desc = "Noice Dismiss All" })
+
+-- Buffers
+keymap.set("n", "<S-l>", "<CMD>bnext<CR>", { desc = "Next Buffer" })
+keymap.set('n', '<Tab>', '<CMD>bnext<CR>', { desc = "Next Buffer" })
+keymap.set("n", "<S-h>", "<CMD>bprevious<CR>", { desc = "Previos Buffer" })
+keymap.set('n', '<S-Tab>', '<CMD>bprevious<CR>', { desc = "Previous Buffer"})
+keymap.set('n', '<leader>x', '<CMD>bd<CR>', { desc = "Close Buffer" })
+keymap.set('n', '<leader>b', '<CMD>enew<CR>', { desc = "New Buffer" })
