@@ -1,4 +1,4 @@
--- Define the function first
+-- Characters count function
 local function visual_selection_count()
   local mode = vim.fn.mode()
   if mode ~= 'v' and mode ~= 'V' and mode ~= '' then
