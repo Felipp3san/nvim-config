@@ -7,4 +7,5 @@ return {
 			require('nvim-highlight-colors').setup({})
 		end
 	},
+	{ "nvim-tree/nvim-web-devicons", opts = {} },
 }

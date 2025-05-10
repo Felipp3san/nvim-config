@@ -19,7 +19,7 @@ keymap.set("n", "<leader>cd", vim.cmd.Ex, { desc = "Open file explorer" })
 keymap.set("n", "<leader>l", "<CMD>Lazy<CR>", { desc = "Open Lazy.vim" })
 
 -- New file
-keymap.set("n", "<leader>nf", "<CMD>enew<cr>", { desc = "New File" })
+-- keymap.set("n", "<leader>nf", "<CMD>enew<cr>", { desc = "New File" })
 
 -- Clear search, diff update and redraw
 keymap.set("n", "<leader>ur",
@@ -40,5 +40,5 @@ keymap.set("n", "<S-l>", "<CMD>bnext<CR>", { desc = "Next Buffer" })
 keymap.set('n', '<Tab>', '<CMD>bnext<CR>', { desc = "Next Buffer" })
 keymap.set("n", "<S-h>", "<CMD>bprevious<CR>", { desc = "Previous Buffer" })
 keymap.set('n', '<S-Tab>', '<CMD>bprevious<CR>', { desc = "Previous Buffer"})
-keymap.set('n', '<leader>x', '<CMD>bd<CR>', { desc = "Close Buffer" })
+-- keymap.set('n', '<leader>x', '<CMD>bd<CR>', { desc = "Close Buffer" })
 keymap.set('n', '<leader>b', '<CMD>enew<CR>', { desc = "New Buffer" })
