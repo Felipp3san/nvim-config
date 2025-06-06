@@ -1,5 +1,5 @@
 return {
-	"windwp/nvim-ts-autotag",
+	"nvim-ts-autotag",
 	config = function()
 		require('nvim-ts-autotag').setup({
 			opts = {
