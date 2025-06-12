@@ -42,3 +42,6 @@ keymap.set("n", "<S-h>", "<CMD>bprevious<CR>", { desc = "Previous Buffer" })
 keymap.set('n', '<S-Tab>', '<CMD>bprevious<CR>', { desc = "Previous Buffer"})
 -- keymap.set('n', '<leader>x', '<CMD>bd<CR>', { desc = "Close Buffer" })
 keymap.set('n', '<leader>b', '<CMD>enew<CR>', { desc = "New Buffer" })
+
+-- Error/Warnings
+keymap.set("n", "<leader>w", "<CMD>lua vim.diagnostic.open_float()<CR>", { desc = "Open error/warning popup" })

@@ -25,6 +25,7 @@ opt.ruler = false				-- Disable the default ruler
 opt.showmode = false			-- Dont show mode since we have a statusline
 opt.termguicolors = true		-- Enable true color support
 opt.list = true					-- Shows invisible characters like tabs, spaces,line breaks etc...
+opt.colorcolumn = "80"			-- Shows line size limit for norminette
 --opt.smartindent = true			-- (use with autoindent) Insert indents automatically
 
 opt.listchars = {

@@ -12,10 +12,8 @@ return {
 		})
 
 		vim.diagnostic.config({
-			virtual_text = {
-				source = "if_many",
-				prefix = '● ',
-			},
+			virtual_text = false,
+			signs = true,
 			update_in_insert = true,
 			underline = true,
 			severity_sort = true,
@@ -28,7 +26,5 @@ return {
 				prefix = '',
 			},
 		})
-
-		vim.lsp.enable('clangd')
 	end
 }
